@@ -17,11 +17,15 @@
     "jsx": "preserve",
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment",
+    "types": ["vitest/globals"],
     "baseUrl": ".",
     "paths": {
       "/@/*": ["src/*"]
     }
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "node_modules/.pnpm/vitest@0.21.0_cdfllwzg4t5vdknlz4virrtgly/node_modules/vitest/globals.d.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
