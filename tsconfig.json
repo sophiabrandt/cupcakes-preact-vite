@@ -17,10 +17,10 @@
     "jsx": "preserve",
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment",
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "vitest/importMeta"],
     "baseUrl": ".",
     "paths": {
-      "/@/*": ["src/*"]
+      "/@/*": ["src/*", "dist/*"]
     }
   },
   "include": [
