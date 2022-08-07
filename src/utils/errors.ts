@@ -7,3 +7,13 @@ export class InvalidPropertyError extends Error {
     }
   }
 }
+
+export class RequiredParameterError extends Error {
+  constructor(param: string) {
+    super(`${param} is required.`)
+
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, RequiredParameterError)
+    }
+  }
+}
